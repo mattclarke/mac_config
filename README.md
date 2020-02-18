@@ -11,6 +11,6 @@ ln -s /path-to-this-repo/bash_profile ~/.bash_profile
 ## Updating
 Occasionally do:
 ```
-sh update.sh 
+sh push_changes.sh 
 ```
 

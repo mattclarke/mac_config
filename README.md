@@ -8,13 +8,9 @@ ln -s /path-to-this-repo/zshrc ~/.zshrc
 ln -s /path-to-this-repo/bash_profile ~/.bash_profile
 ```
 
-## Brew
-```
-ln -s /path-to-this-repo/brew_list.txt ~/.brew_list.txt
-```
-
+## Updating
 Occasionally do:
 ```
-brew list ~/.brew_list.txt
+sh update.sh 
 ```
 

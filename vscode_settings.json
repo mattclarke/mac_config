@@ -6,7 +6,7 @@
     "python.formatting.autopep8Args": [
         "black"
     ],
-    "python.condaPath": "/usr/local/anaconda3/bin/conda",
+    "python.condaPath": "/Users/mattclarke/miniconda3/bin/conda",
     "python.formatting.provider": "black",
     "python.testing.pytestEnabled": true,
     "C_Cpp.default.cppStandard": "c++14",

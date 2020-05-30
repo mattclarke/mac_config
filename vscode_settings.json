@@ -15,7 +15,7 @@
     "files.autoSave": "afterDelay",
     "terminal.integrated.inheritEnv": false,
     "workbench.colorTheme": "Solarized Light",
-    "python.defaultInterpreterPath": "/Users/mattclarke/miniconda3/envs/just-bin-it/bin/python",
+    "python.defaultInterpreterPath": "/Users/mattclarke/miniconda3/bin/python",
     "python.linting.flake8Args": [
         "--ignore=D103,D100,D110,D101,D105,D107,E501,E203,E402,W503,Q000,S101,I002,C101",
 

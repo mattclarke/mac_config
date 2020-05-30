@@ -1,0 +1,27 @@
+{
+    "C_Cpp.clang_format_fallbackStyle": "LLVM",
+    "diffEditor.renderSideBySide": true,
+    "window.zoomLevel": 1,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.autopep8Args": [
+        "black"
+    ],
+    "python.condaPath": "/usr/local/anaconda3/bin/conda",
+    "python.formatting.provider": "black",
+    "python.testing.pytestEnabled": true,
+    "C_Cpp.default.cppStandard": "c++14",
+    "C_Cpp.default.intelliSenseMode": "clang-x64",
+    "C_Cpp.updateChannel": "Insiders",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.inheritEnv": false,
+    "workbench.colorTheme": "Solarized Light",
+    "python.defaultInterpreterPath": "/Users/mattclarke/miniconda3/envs/just-bin-it/bin/python",
+    "python.linting.flake8Args": [
+        "--ignore=D103,D110,D101,D105,D107,E501,E203,E402,W503,Q000,S101",
+
+    ],
+    "python.autoComplete.extraPaths": [
+    
+    ],
+}

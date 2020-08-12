@@ -22,5 +22,6 @@
     ],
     "python.autoComplete.extraPaths": [
     
-    ]
+    ],
+    "liveshare.featureSet": "insiders",
 }

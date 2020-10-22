@@ -24,4 +24,5 @@
     
     ],
     "liveshare.featureSet": "insiders",
+    "rust.clippy_preference": "on",
 }

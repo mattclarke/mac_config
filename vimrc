@@ -23,6 +23,8 @@ set autoindent
 set expandtab
 set tabstop=4
 set shiftwidth=4
+set path+=**
+set wildmenu
 colorscheme default
 let g:airline_theme='bubblegum'
 let g:ycm_autoclose_preview_window_after_completion=1

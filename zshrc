@@ -97,11 +97,11 @@ unsetopt share_history
 # export ARCHFLAGS="-arch x86_64"
 
 # Add the brew version of clang
-export PATH="/usr/local/opt/llvm/bin:$PATH"
-export CC="/usr/local/opt/llvm/bin/clang"
-export CXX="$CC++"
-export LDFLAGS="-L/usr/local/opt/llvm/lib"
-export CPPFLAGS="-I/usr/local/opt/llvm/include"
+#export PATH="/usr/local/opt/llvm/bin:$PATH"
+#export CC="/usr/local/opt/llvm/bin/clang"
+#export CXX="$CC++"
+#export LDFLAGS="-L/usr/local/opt/llvm/lib"
+#export CPPFLAGS="-I/usr/local/opt/llvm/include"
 
 # Add rust
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -117,6 +117,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # Make ls friendly
 alias ls='ls -GFh'
+
+# History and grep
+alias hg="history | grep"
 
 prompt_context() {}
 
@@ -134,3 +137,6 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+alias lg='lazygit'
+alias gcm='git checkout main || git checkout master'

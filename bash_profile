@@ -3,9 +3,9 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 # Add the brew version of clang
-export PATH="/usr/local/opt/llvm/bin:$PATH"
-export CC="/usr/local/opt/llvm/bin/clang"
-export CXX="$CC++"
+#export PATH="/usr/local/opt/llvm/bin:$PATH"
+#export CC="/usr/local/opt/llvm/bin/clang"
+#export CXX="$CC++"
 # Add epics path
 export PATH="/opt/epics/base/bin/darwin-x86:$PATH"
 

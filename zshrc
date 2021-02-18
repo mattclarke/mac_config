@@ -121,6 +121,11 @@ alias ls='ls -GFh'
 # History and grep
 alias hg="history | grep"
 
+# git related
+alias lg='lazygit'
+alias gcm='git checkout main || git checkout master'
+alias gsp='git stash push -m'
+
 prompt_context() {}
 
 # >>> conda initialize >>>
@@ -138,5 +143,3 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
-alias lg='lazygit'
-alias gcm='git checkout main || git checkout master'

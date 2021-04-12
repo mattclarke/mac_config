@@ -118,8 +118,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Make ls friendly
 alias ls='ls -GFh'
 
-# History and grep
-alias hg="history | grep"
+# History and "grep"
+alias hg="history | ack"
 
 # git related
 alias lg='lazygit'

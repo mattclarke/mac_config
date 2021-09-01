@@ -123,7 +123,7 @@ alias hg="history | ack"
 
 # git related
 alias lg='lazygit'
-alias gcm='git checkout main || git checkout master'
+alias gcm='git checkout main 2> /dev/null || git checkout master'
 alias gsp='git stash push -m'
 
 prompt_context() {}
@@ -143,3 +143,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/mattclarke/.sdkman"
+[[ -s "/Users/mattclarke/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/mattclarke/.sdkman/bin/sdkman-init.sh"

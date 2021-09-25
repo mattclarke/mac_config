@@ -1,0 +1,33 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+format = "$conda$python$all"
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                            # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[conda]
+symbol = "🅒 "
+format = "[$symbol$environment](green) "
+ignore_base = false
+
+[git_branch]
+symbol = " "
+truncation_length = 4
+truncation_symbol = ""
+format = "[$symbol$branch]($style) "
+
+[directory]
+truncation_length = 8
+truncation_symbol = "…/"
+truncate_to_repo = false
+home_symbol = "🏠"
+
+[python]
+detect_extensions = []
+

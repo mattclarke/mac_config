@@ -8,7 +8,7 @@ export ZSH="/Users/mattclarke/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME=agnoster
+# ZSH_THEME=agnoster
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -143,6 +143,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+# Starship prompt
+eval "$(starship init zsh)"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/mattclarke/.sdkman"

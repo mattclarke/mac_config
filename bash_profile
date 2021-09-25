@@ -9,13 +9,7 @@ alias ls='ls -GFh'
 # Add epics path
 export PATH="/opt/epics/base/bin/darwin-x86:$PATH"
 
-# Powerline
-export PATH="$HOME/Library/Python/3.7/bin:$PATH"
-. ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
-fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -33,3 +27,10 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# Starship prompt
+eval "$(starship init bash)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/mattclarke/.sdkman"
+[[ -s "/Users/mattclarke/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/mattclarke/.sdkman/bin/sdkman-init.sh"

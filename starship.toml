@@ -18,8 +18,8 @@ ignore_base = false
 
 [git_branch]
 symbol = " "
-truncation_length = 4
-truncation_symbol = ""
+truncation_length = 15
+truncation_symbol = "..."
 format = "[$symbol$branch]($style) "
 
 [directory]
@@ -30,4 +30,5 @@ home_symbol = "🏠"
 
 [python]
 detect_extensions = []
+disabled = true
 

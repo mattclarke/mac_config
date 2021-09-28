@@ -1,7 +1,7 @@
 # Inserts a blank line between shell prompts
 add_newline = true
 
-format = "$conda$directory$git_branch\n$character"
+format = "$conda$directory$git_branch$git_state$git_status\n$character"
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character]                            # The name of the module we are configuring is "character"
@@ -18,8 +18,6 @@ ignore_base = false
 
 [git_branch]
 symbol = " "
-truncation_length = 15
-truncation_symbol = "..."
 format = "[$symbol$branch]($style) "
 
 [directory]

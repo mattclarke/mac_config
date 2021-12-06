@@ -121,6 +121,13 @@ alias ls='ls -GFh'
 # History and "grep"
 alias hg="history | ack"
 
+# mkdir and cd
+mkcd ()
+{
+    mkdir -p -- "$1" &&
+      cd -P -- "$1"
+}
+
 # git related
 alias lg='lazygit'
 alias gcm='git checkout main 2> /dev/null || git checkout master'

@@ -30,3 +30,13 @@ let g:airline_theme='bubblegum'
 let g:ycm_autoclose_preview_window_after_completion=1
 syntax on
 set ttimeoutlen=10
+set clipboard=unnamed
+
+"python
+au Filetype python set 
+    \ tabstop=4
+    \ softtabstop=4
+    \ shiftwidth=4
+    \ expandtab
+    \ autoindent
+    \ fileformat=unix

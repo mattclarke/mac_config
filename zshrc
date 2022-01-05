@@ -131,7 +131,7 @@ mkcd ()
 # git related
 alias lg='lazygit'
 alias gcm='git checkout main 2> /dev/null || git checkout master'
-alias gsp='git stash push -m'
+alias gbo="git for-each-ref --sort=committerdate refs/heads/ --format='%(color: red)%(committerdate:short) %(color: cyan)%(refname:short) %(color: blue)[%(upstream:short)]'"
 
 prompt_context() {}
 

@@ -127,9 +127,27 @@ alias hg="history | ack"
 # mkdir and cd
 mkcd ()
 {
-    mkdir -p -- "$1" &&
-      cd -P -- "$1"
+    mkdir -p -- "$1" && cd -P -- "$1"
 }
+
+# Set EPICS gateway for RO from outside
+nin_gw ()
+{
+    export EPICS_CA_ADDR_LIST=idmz-ro-epics-gw-tn.esss.lu.se 
+    export EPICS_CA_AUTO_ADDR_LIST=No
+    export EPICS_PVA_ADDR_LIST=idmz-ro-epics-gw-tn.esss.lu.se 
+    export EPICS_PVA_AUTO_ADDR_LIST=No
+}
+
+# Clear all epics address env vars
+clear_epics ()
+{
+    unset EPICS_CA_ADDR_LIST 
+    unset EPICS_CA_AUTO_ADDR_LIST
+    unset EPICS_PVA_ADDR_LIST 
+    unset EPICS_PVA_AUTO_ADDR_LIST
+}
+
 
 # git related
 alias lg='lazygit'

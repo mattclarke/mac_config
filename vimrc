@@ -33,6 +33,10 @@ syntax on
 set ttimeoutlen=10
 set clipboard=unnamed
 let mapleader = ","
+nnoremap <CR> :nohlsearch<cr>
+:set incsearch
+:set hlsearch
+
 
 " Move around splits with <c-hjkl>
 nnoremap <c-j> <c-w>j

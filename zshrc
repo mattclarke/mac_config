@@ -153,6 +153,7 @@ clear_epics ()
 alias lg='lazygit'
 alias gcm='git checkout main 2> /dev/null || git checkout master'
 alias gbo="git for-each-ref --sort=committerdate refs/heads/ --format='%(color: red)%(committerdate:short) %(color: cyan)%(refname:short) %(color: blue)[%(upstream:short)]'"
+alias gerrit='git review -T'
 
 prompt_context() {}
 
@@ -170,6 +171,9 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+# Hide conda prompt as using Starship
+conda config --set changeps1 False
+
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 # Starship prompt

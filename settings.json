@@ -1,0 +1,20 @@
+{
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.fontSize": 16,
+    "workbench.startupEditor": "none",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.fontSize": 13,
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.env.osx": {
+        "PATH": ""
+    },
+    "terminal.integrated.fontFamily": "Fira Code",
+    "window.zoomLevel": 1
+}

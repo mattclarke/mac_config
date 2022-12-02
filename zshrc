@@ -157,22 +157,10 @@ alias gerrit='git review -T'
 
 prompt_context() {}
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/mattclarke/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/mattclarke/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/mattclarke/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/mattclarke/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-# Hide conda prompt as using Starship
-conda config --set changeps1 False
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
@@ -183,6 +171,3 @@ eval "$(starship init zsh)"
 export SDKMAN_DIR="/Users/mattclarke/.sdkman"
 [[ -s "/Users/mattclarke/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/mattclarke/.sdkman/bin/sdkman-init.sh"
 
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/mattclarke/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

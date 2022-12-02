@@ -4,7 +4,7 @@ command_timeout = 750
 # Inserts a blank line between shell prompts
 add_newline = true
 
-format = "$conda$directory$git_branch$git_state$git_status\n$character"
+format = "$python$directory$git_branch$git_state$git_status\n$character"
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character]                            # The name of the module we are configuring is "character"
@@ -13,11 +13,6 @@ success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being
 # Disable the package module, hiding it from the prompt completely
 [package]
 disabled = true
-
-[conda]
-symbol = "🅒 "
-format = "[$symbol$environment](green) "
-ignore_base = false
 
 [git_branch]
 symbol = " "
@@ -30,6 +25,5 @@ truncate_to_repo = false
 home_symbol = "🏠"
 
 [python]
-detect_extensions = []
-disabled = true
+format = "[($virtualenv )](green)"
 

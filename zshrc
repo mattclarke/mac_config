@@ -116,7 +116,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Use neovim
-alias vim='nvim'
+#alias vim='nvim'
 
 # Make ls friendly
 alias ls='ls -GFh'

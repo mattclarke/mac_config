@@ -10,7 +10,6 @@
     },
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "editor.fontSize": 13,
     "terminal.integrated.inheritEnv": false,
     "terminal.integrated.env.osx": {
         "PATH": ""

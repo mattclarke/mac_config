@@ -1,0 +1,11 @@
+python
+pyenv
+starship
+conan
+pypy3
+colima
+docker
+docker-compose
+ninja
+cmake
+

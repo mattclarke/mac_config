@@ -8,4 +8,5 @@ docker
 docker-compose
 ninja
 cmake
+lazygit
 

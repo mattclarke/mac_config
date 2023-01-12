@@ -122,7 +122,7 @@ alias vim='nvim'
 alias ls='ls -GFh'
 
 # History and "grep"
-alias hg="history | ack"
+alias hg="history | rg"
 
 # mkdir and cd
 mkcd ()

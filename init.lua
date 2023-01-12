@@ -188,6 +188,7 @@ require('gitsigns').setup {
 -- See `:help telescope` and `:help telescope.setup()`
 require('telescope').setup {
   defaults = {
+    file_ignore_patterns = { "^./.git/", "^venv/" },
     mappings = {
       i = {
         ['<C-u>'] = false,
@@ -423,6 +424,8 @@ cmp.setup {
     { name = 'luasnip' },
   },
 }
+
+vim.api.nvim_set_option("clipboard", "unnamed")
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

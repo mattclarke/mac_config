@@ -383,6 +383,20 @@ mason_lspconfig.setup_handlers {
   end,
 }
 
+-- configure for Python
+require('lspconfig').pylsp.setup {
+  settings = {
+    pylsp = {
+      plugins = {
+        mccabe = { enabled = false },
+        pycodestyle = { enabled = false },
+        flake8 = { enabled = true },
+        pyflakes = { enabled = false }
+      }
+    }
+  }
+}
+
 -- Turn on lsp status information
 require('fidget').setup()
 

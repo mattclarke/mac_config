@@ -9,4 +9,5 @@ docker-compose
 ninja
 cmake
 lazygit
+tmux
 

@@ -144,6 +144,12 @@ vim.keymap.set('v', '<S-Down>', ":m '>+1<CR>gv=gv", { silent = true })
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
+vim.keymap.set('n', '<C-k>', ":wincmd k<CR>", { silent = true})
+vim.keymap.set('n', '<C-j>', ":wincmd j<CR>", { silent = true})
+vim.keymap.set('n', '<C-h>', ":wincmd h<CR>", { silent = true})
+vim.keymap.set('n', '<C-l>', ":wincmd l<CR>", { silent = true})
+
+
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
@@ -320,7 +326,7 @@ local on_attach = function(_, bufnr)
 
   -- See `:help K` for why this keymap
   nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
-  nmap('<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation')
+  nmap('<C-K>', vim.lsp.buf.signature_help, 'Signature Documentation')
 
   -- Lesser used LSP functionality
   nmap('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')

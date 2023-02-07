@@ -10,4 +10,7 @@ ninja
 cmake
 lazygit
 tmux
+iterm2
+vienna
+obsidian
 

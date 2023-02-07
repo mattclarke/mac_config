@@ -1,3 +1,6 @@
+# Install oh-my-zsh before brew!
+git
+neovim
 python
 pyenv
 starship

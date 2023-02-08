@@ -162,12 +162,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
-
 # Starship prompt
 eval "$(starship init zsh)"
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/mattclarke/.sdkman"
-[[ -s "/Users/mattclarke/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/mattclarke/.sdkman/bin/sdkman-init.sh"
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 

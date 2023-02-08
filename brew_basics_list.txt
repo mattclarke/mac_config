@@ -1,6 +1,7 @@
 # Install oh-my-zsh before brew!
 git
 neovim
+nerdfonts
 python
 pyenv
 starship
@@ -14,6 +15,7 @@ cmake
 lazygit
 tmux
 iterm2
-vienna
 obsidian
+clipy
+NetNewsWire
 

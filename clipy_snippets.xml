@@ -4,7 +4,7 @@
 		<title>NICOS</title>
 		<snippets>
 			<snippet>
-				<title>Loki table data</title>
+				<title>table data</title>
 				<content>a	wq	1	10	20
 b	eq	2	10	20
 c	qweqw	3	10	20
@@ -18,8 +18,12 @@ f	wwq	6	10	20</content>
 		<title>Git</title>
 		<snippets>
 			<snippet>
-				<title>Nuke working tree</title>
+				<title>nuke working tree</title>
 				<content>git reset --hard HEAD &amp;&amp; git clean -fd</content>
+			</snippet>
+			<snippet>
+				<title>undo local commit</title>
+				<content>git reset HEAD~</content>
 			</snippet>
 		</snippets>
 	</folder>

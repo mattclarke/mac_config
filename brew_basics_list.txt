@@ -18,4 +18,6 @@ iterm2
 obsidian
 clipy
 NetNewsWire
+ripgrep
+fd
 

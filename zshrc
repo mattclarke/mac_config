@@ -80,11 +80,12 @@ autoload zmv
 SHARE_HISTORY="false"
 setopt no_share_history
 unsetopt share_history
+setopt HIST_IGNORE_ALL_DUPS
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -119,7 +120,10 @@ export PATH="$HOME/.cargo/bin:$PATH"
 alias vim='nvim'
 
 # Make ls friendly
-alias ls='ls -GFh'
+#alias ls='ls -GFh'
+
+# Use lsd instead of ls
+alias ls='lsd'
 
 # History and "grep"
 alias hg="history | rg"
@@ -148,6 +152,8 @@ clear_epics ()
     unset EPICS_PVA_AUTO_ADDR_LIST
 }
 
+# tmux using unicode by default
+alias tmux='tmux -u'
 
 # git related
 alias lg='lazygit'

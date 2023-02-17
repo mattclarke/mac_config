@@ -122,6 +122,9 @@ vim.wo.signcolumn = 'yes'
 vim.o.termguicolors = true
 vim.cmd [[colorscheme onedark]]
 
+-- Set cursor to blink
+vim.cmd(':set guicursor=a:blinkon100')
+
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
 

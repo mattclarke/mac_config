@@ -130,7 +130,7 @@ alias ls='lsd'
 alias hg="history | rg"
 
 # Search Python files without typing the glob
-alias rgpy='rg $1 -g "*.py"'
+alias rgpy='rg $1 -g "*.py" -g "\!venv"'
 
 # mkdir and cd
 mkcd ()

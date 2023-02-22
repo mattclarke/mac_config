@@ -81,6 +81,7 @@ SHARE_HISTORY="false"
 setopt no_share_history
 unsetopt share_history
 setopt HIST_IGNORE_ALL_DUPS
+setopt inc_append_history
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -127,6 +128,9 @@ alias ls='lsd'
 
 # History and "grep"
 alias hg="history | rg"
+
+# Search Python files without typing the glob
+alias rgpy='rg $1 -g "*.py"'
 
 # mkdir and cd
 mkcd ()

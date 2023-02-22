@@ -20,4 +20,5 @@ clipy
 NetNewsWire
 ripgrep
 fd
+wget
 

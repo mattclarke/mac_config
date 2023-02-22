@@ -97,7 +97,7 @@ vim.api.nvim_create_autocmd('BufWritePost', {
 -- See `:help vim.o`
 
 -- Set highlight on search
-vim.o.hlsearch = false
+vim.o.hlsearch = true
 
 -- Make line numbers default
 vim.wo.number = true
@@ -121,7 +121,6 @@ vim.wo.signcolumn = 'yes'
 
 -- Set colorscheme
 vim.o.termguicolors = true
-vim.cmd [[colorscheme onedark]]
 vim.cmd [[colorscheme tokyonight]]
 
 -- Set cursor to blink
@@ -155,6 +154,8 @@ vim.keymap.set('n', '<C-j>', ":wincmd j<CR>", { silent = true})
 vim.keymap.set('n', '<C-h>', ":wincmd h<CR>", { silent = true})
 vim.keymap.set('n', '<C-l>', ":wincmd l<CR>", { silent = true})
 
+-- On escape, clear highlighted searches
+vim.keymap.set('n', '<esc>', ":noh<CR><esc>", { silent = true})
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`

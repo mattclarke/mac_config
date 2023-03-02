@@ -43,11 +43,20 @@ require('packer').startup(function(use)
     after = 'nvim-treesitter',
   }
 
+  -- File explorer
+  use 'nvim-tree/nvim-tree.lua'
+  use 'nvim-tree/nvim-web-devicons'
+  vim.g.loaded_netrw = 1
+  vim.g.loaded_netrwPlugin = 1
+  require("nvim-tree").setup()
+  vim.keymap.set('n', '<c-n>', ':NvimTreeFindFileToggle<CR>')
+
   -- Git related plugins
   use 'tpope/vim-fugitive'
   use 'tpope/vim-rhubarb'
   use 'lewis6991/gitsigns.nvim'
 
+  -- General plugins
   use 'folke/tokyonight.nvim' -- Theme 
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
   use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines

@@ -130,6 +130,7 @@ vim.wo.signcolumn = 'yes'
 -- Set colorscheme
 vim.o.termguicolors = true
 vim.cmd [[colorscheme tokyonight]]
+vim.cmd(':highlight LineNr guifg=grey')
 
 -- Set cursor to blink
 vim.cmd(':set guicursor=a:blinkon100')

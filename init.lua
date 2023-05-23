@@ -62,6 +62,7 @@ require('packer').startup(function(use)
   use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
   use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
   use 'tpope/vim-sleuth' -- Detect tabstop and shiftwidth automatically
+  use 'tpope/vim-surround' -- Add/remove surrounding brackets, quotes, etc.
 
   -- Fuzzy Finder (files, lsp, etc)
   use { 'nvim-telescope/telescope.nvim', branch = '0.1.x', requires = { 'nvim-lua/plenary.nvim' } }
@@ -131,6 +132,7 @@ vim.wo.signcolumn = 'yes'
 vim.o.termguicolors = true
 vim.cmd [[colorscheme tokyonight]]
 vim.cmd(':highlight LineNr guifg=grey')
+vim.cmd(':highlight Comment guifg=grey')
 
 -- Set cursor to blink
 vim.cmd(':set guicursor=a:blinkon100')

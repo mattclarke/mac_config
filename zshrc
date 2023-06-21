@@ -157,6 +157,9 @@ clear_epics ()
     unset EPICS_PVA_AUTO_ADDR_LIST
 }
 
+# Stop openssl from crashing gdb
+export OPENSSL_armcap=0
+
 # tmux using unicode by default
 alias tmux='tmux -u'
 

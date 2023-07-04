@@ -2,6 +2,7 @@
 
 "settings
 set nu
+set paste
 set encoding=utf-8
 set autoindent
 set expandtab

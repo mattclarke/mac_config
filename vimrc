@@ -1,6 +1,6 @@
-"basic setup in case we are somewhere without neovim
+" Basic setup in case we are somewhere without neovim
 
-"settings
+" Settings
 set nu
 set paste
 set encoding=utf-8
@@ -16,9 +16,10 @@ set ttimeoutlen=10
 set clipboard=unnamed
 let mapleader = " "
 nnoremap <CR> :nohlsearch<cr>
-:set incsearch
-:set hlsearch
-
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
 
 " Move around splits with <c-hjkl>
 nnoremap <c-j> <c-w>j

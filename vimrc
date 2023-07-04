@@ -13,7 +13,7 @@ colorscheme darkblue
 syntax on
 set ttimeoutlen=10
 set clipboard=unnamed
-let mapleader = ","
+let mapleader = " "
 nnoremap <CR> :nohlsearch<cr>
 :set incsearch
 :set hlsearch

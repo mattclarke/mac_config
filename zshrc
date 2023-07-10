@@ -157,6 +157,17 @@ clear_epics ()
     unset EPICS_PVA_AUTO_ADDR_LIST
 }
 
+# Commands for connecting to instruments
+inst ()
+{
+    ssh -J mattclarke@nxbastion-nin-01.cn.nin.ess.eu matt.clarke@"$1"-nicosserver01.cn.nin.ess.eu
+}
+
+instgui ()
+{
+    ssh -L 3389:"$1"-nicosserver01.cn.nin.ess.eu:1301 mattclarke@nxbastion-nin-01.cn.nin.ess.eu
+}
+
 # Stop openssl from crashing gdb
 export OPENSSL_armcap=0
 

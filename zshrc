@@ -181,7 +181,7 @@ alias gbo="git for-each-ref --sort=committerdate refs/heads/ --format='%(color: 
 alias gerrit='git review -T'
 
 # Python virtual env
-alias pyv='. venv/bin/activate'
+alias pyv='. .venv/bin/activate 2> /dev/null || . venv/bin/activate'
 
 prompt_context() {}
 

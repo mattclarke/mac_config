@@ -21,4 +21,5 @@ NetNewsWire
 ripgrep
 fd
 wget
+fzf
 

@@ -129,6 +129,7 @@ alias ls='lsd'
 
 # History and "grep"
 alias hg="history | rg"
+alias hf="history | fzf"
 
 # Search Python files without typing the glob
 alias rgpy='rg $1 -g "*.py" -g "\!venv"'

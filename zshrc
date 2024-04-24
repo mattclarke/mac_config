@@ -161,12 +161,12 @@ clear_epics ()
 # Commands for connecting to instruments
 inst ()
 {
-    ssh -J mattclarke@nxbastion-nin-01.cn.nin.ess.eu matt.clarke@"$1"-nicosserver01.cn.nin.ess.eu
+    ssh -J mattclarke@ssh4.esss.dk mattclarke@"$1"-nicosserver01.daq.esss.dk
 }
 
 instgui ()
 {
-    ssh -L 3389:"$1"-nicosserver01.cn.nin.ess.eu:1301 mattclarke@nxbastion-nin-01.cn.nin.ess.eu
+    ssh -L 3389:"$1"-nicosserver01.daq.esss.dk:1301 mattclarke@ssh4.esss.dk
 }
 
 # Stop openssl from crashing gdb
@@ -193,6 +193,10 @@ eval "$(pyenv init -)"
 
 # Starship prompt
 eval "$(starship init zsh)"
+
+# OCAML
+[[ ! -r /Users/mattclarke/.opam/opam-init/init.zsh ]] || source /Users/mattclarke/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"

@@ -354,7 +354,7 @@ require('lazy').setup({
         lexical = {},
         elixirls = {},
         -- pyright = {},
-        -- rust_analyzer = {},
+        rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -682,6 +682,10 @@ vim.keymap.set('v', '<S-Down>', ":m '>+1<CR>gv=gv", { silent = true })
 -- Remap for dealing with word wrap
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
+
+-- Shortcut for paste from register 0
+vim.keymap.set('v', '<leader>p', '"0p', { silent = true })
+vim.keymap.set('n', '<leader>p', '"0p', { silent = true })
 
 -- Set cursor to blink
 -- vim.cmd.set('guicursor', 'a:blinkon100')

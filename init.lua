@@ -687,6 +687,14 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 vim.keymap.set('v', '<leader>p', '"0p', { silent = true })
 vim.keymap.set('n', '<leader>p', '"0p', { silent = true })
 
+-- Shortcut for quick list navigation
+vim.keymap.set('n', '<M-j>', '<cmd>cnext<CR>')
+vim.keymap.set('n', '<M-k>', '<cmd>cprevious<CR>')
+
+-- Macos meta hack
+vim.keymap.set('n', '∆', '<cmd>cnext<CR>')
+vim.keymap.set('n', '˚', '<cmd>cprevious<CR>')
+
 -- Set cursor to blink
 -- vim.cmd.set('guicursor', 'a:blinkon100')
 

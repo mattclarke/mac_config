@@ -27,3 +27,4 @@ home_symbol = "🏠"
 [python]
 format = "[($virtualenv )](green)"
 
+

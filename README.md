@@ -6,6 +6,8 @@
 - install ripgrep via brew
 - install fzf via brew
 - install lsd via brew
+- install nerd fonts (brew install font-hack-nerd-fon)
+- config iterm2 to use new font (may need to restart machine)
 - install starship via brew
 - config starship
 - config oh-my-zsh

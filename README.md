@@ -11,3 +11,6 @@
 - config oh-my-zsh
 - install dropbox via brew
 - install ssh and gpg keys
+- install neovim via brew
+- install luarocks via brew
+- clone my neovim config repo

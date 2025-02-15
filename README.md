@@ -16,3 +16,4 @@
 - install neovim via brew
 - install luarocks via brew
 - clone my neovim config repo
+- install lazygit via brew

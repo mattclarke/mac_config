@@ -131,6 +131,9 @@ alias hf="history | fzf"
 # Use lsd instead of ls
 alias ls='lsd'
 
+# Python virtual env
+alias pyv='. .venv/bin/activate'
+
 # tmux using unicode by default
 alias tmux='tmux -u'
 

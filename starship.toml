@@ -4,7 +4,7 @@ command_timeout = 1000
 # Inserts a blank line between shell prompts
 add_newline = true
 
-format = "$python$directory$git_branch$git_state$git_status\n$character"
+format = "$time$python$directory$git_branch$git_state$git_status\n$character"
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character]                            # The name of the module we are configuring is "character"
@@ -27,4 +27,8 @@ home_symbol = "🏠"
 [python]
 format = "[($virtualenv )](green)"
 
-
+[time]
+disabled = false
+time_format = "%T"
+style = "fg:green"
+format = '[$time ]($style)'
